@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bike app</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <div class="bike-rental">
+        <div class="rental-container ">
+    <h1>Bike Rental</h1>
+    <div class="container">
+        <h3>Add Bike</h3>
+        <form id="bike-create">
+            <div class="create-input">
+            <label class="label" id="bikenamelabel">Bike name</label>
+            <input class="input-element" type="text" id="bikename" placeholder="bigbike" required>
+        </div>
+        <div class="create-input">
+            <label class="label" for="bike-type">Bike type</label>
+            <select id="typeselect">
+                <option id="options" disabled hidden selected>Custom</option>
+
+            </select>
+        </div >
+        <div class="create-input">
+            <label class="label" for="bikeprice">Rent Price</label>
+            <input class="input-element" type="text" id="bikeprice" placeholder="16.99" required>
+
+            <button id="addBikeBtn" type="submit">Add bike</button>
+        </div>
+        </form>
+    </div>
+    <div class="container">
+        <h3>Your rent(Total: $<span id="price">$</span>)</h3>
+        <div id="rentbikes">
+        </div>
+    </div>
+    <div class="container">
+        <h3>Available bicycles (<span id="amount">0</span>)</h3>
+        <div id="avlvblbikes">
+        </div>
+    </div>
+        </div>
+</div>
+</body>
+
+</html>
